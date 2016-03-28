@@ -9,12 +9,45 @@
 		<meta name="description" content="A parallax scrolling experiment using jQuery" />
 
 		<link rel="stylesheet" media="all" href="css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<script src="js/modernizr.custom.37797.js"></script> 
 		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
 		<script src="js/parallax.js"></script>
+		<style type="text/css">
+		@font-face {
+		    font-family: 'League Spartan';
+		    src: url('fonts/leaguespartan-bold.eot');
+		    src: url('fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/leaguespartan-bold.woff2') format('woff2'),
+		         url('fonts/leaguespartan-bold.woff') format('woff'),
+		         url('fonts/leaguespartan-bold.ttf') format('truetype'),
+		         url('fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+		    font-weight: bold;
+		    font-style: normal;
+		}
+			b {
+				font-weight: bold;
+			}
+			body {
+				font-size: 1em;
+				font-family: "League Spartan"
+			}
+			h1 {font-family: "League Spartan" !important; line-height: 1.3em !important; color: #2ae699 !important;}
+			article ul {list-style-type: circle}
+			#branding {
+				background: linear-gradient(to bottom,#2ae699,#38d3c7);
+			}
+			#branding h1 {color: white;}
+			hr {
+				height: 20px;
+				border: none;
+				background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%2010%22%3E%3Cpath%20fill%3D%22%232AE699%22%20d%3D%22M190%208.3c-2.6%200-4-1.5-5.3-3.1-1.2-1.5-2.4-2.8-4.7-2.8-2.4%200-3.5%201.4-4.7%202.8-1.2%201.5-2.6%203.1-5.3%203.1-2.6%200-4-1.5-5.3-3.1-1.2-1.5-2.4-2.8-4.7-2.8-2.4%200-3.5%201.4-4.7%202.8-1.3%201.5-2.6%203.1-5.3%203.1s-4-1.5-5.3-3.1c-1.2-1.5-2.4-2.8-4.7-2.8-2.4%200-3.5%201.4-4.7%202.8-1.2%201.5-2.6%203.1-5.3%203.1-2.6%200-4-1.5-5.3-3.1-1.2-1.5-2.4-2.8-4.7-2.8-2.4%200-3.5%201.4-4.7%202.8-1.3%201.5-2.6%203.1-5.3%203.1-2.6%200-4-1.5-5.3-3.1-1.2-1.5-2.4-2.8-4.7-2.8s-3.5%201.4-4.7%202.8C94%206.8%2092.6%208.3%2090%208.3s-4-1.5-5.3-3.1c-1.2-1.5-2.4-2.8-4.7-2.8s-3.5%201.4-4.7%202.8C74%206.8%2072.6%208.3%2070%208.3c-2.6%200-4-1.5-5.3-3.1-1.2-1.5-2.4-2.8-4.7-2.8-2.4%200-3.5%201.4-4.7%202.8C54%206.8%2052.6%208.3%2050%208.3c-2.6%200-4-1.5-5.3-3.1-1.3-1.5-2.4-2.8-4.7-2.8s-3.5%201.4-4.7%202.8C34%206.8%2032.6%208.3%2030%208.3s-4-1.5-5.3-3.1c-1.2-1.5-2.4-2.8-4.7-2.8s-3.5%201.4-4.7%202.8C14%206.8%2012.6%208.3%2010%208.3S6%206.8%204.7%205.2C3.5%203.8%202.4%202.4%200%202.4v-.7c2.6%200%204%201.5%205.3%203.1C6.5%206.3%207.6%207.6%2010%207.6s3.5-1.4%204.7-2.8C16%203.2%2017.4%201.7%2020%201.7s4%201.5%205.3%203.1c1.2%201.4%202.4%202.8%204.7%202.8s3.5-1.4%204.7-2.8C36%203.2%2037.4%201.7%2040%201.7c2.6%200%204%201.5%205.3%203.1%201.2%201.4%202.4%202.8%204.7%202.8s3.5-1.4%204.7-2.8C56%203.2%2057.4%201.7%2060%201.7s4%201.5%205.3%203.1c1.2%201.4%202.4%202.8%204.7%202.8%202.4%200%203.5-1.4%204.7-2.8C76%203.2%2077.3%201.7%2080%201.7c2.6%200%204%201.5%205.3%203.1%201.2%201.5%202.4%202.8%204.7%202.8s3.5-1.4%204.7-2.8c1.2-1.5%202.6-3.1%205.3-3.1s4%201.5%205.3%203.1c1.2%201.5%202.4%202.8%204.7%202.8%202.3%200%203.5-1.4%204.7-2.8%201.2-1.5%202.6-3.1%205.3-3.1%202.6%200%204%201.5%205.3%203.1%201.2%201.5%202.4%202.8%204.7%202.8%202.4%200%203.5-1.4%204.7-2.8%201.2-1.5%202.6-3.1%205.3-3.1%202.6%200%204%201.5%205.3%203.1%201.2%201.5%202.4%202.8%204.7%202.8%202.4%200%203.5-1.4%204.7-2.8%201.2-1.5%202.6-3.1%205.3-3.1%202.7%200%204%201.5%205.3%203.1%201.2%201.5%202.4%202.8%204.7%202.8%202.4%200%203.5-1.4%204.7-2.8%201.2-1.5%202.6-3.1%205.3-3.1%202.6%200%204%201.5%205.3%203.1%201.2%201.5%202.4%202.8%204.7%202.8s3.5-1.4%204.7-2.8c1.3-1.5%202.6-3.1%205.3-3.1v.7c-2.4%200-3.5%201.4-4.7%202.8-1.3%201.6-2.7%203.1-5.3%203.1z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat;
+
+			}
+		</style>
 	</head>
 
 	<body>
@@ -51,7 +84,14 @@
 					<header>
 						<h1>So You Registered To Vote</h1>
 					</header>
-					<p>The first clearly recorded instance of a balloon carrying passengers used hot air to generate buoyancy and was built by the brothers Joseph-Michel and Jacques-Etienne Montgolfier in Annonay, France. After experimenting with unmanned balloons and flights with animals, the first tethered balloon flight with humans on board took place on October 15, 1783.</p>
+					<p>That's great. Do remember the form you filled out? In <b style="border-bottom: 1px solid black">New York <i class="fa fa-chevron-down"></i></b>, you have to provide: </p>
+					<ul>
+						<li>Date of birth</li>
+						<li>Address</li>
+						<li>SSN</li>
+						<li>…</li>
+					</ul>
+					<p><b>But did you know that information is given to campaigns, advocacy organizations, and basically everyone who asks?</b></p>
 					<nav class="next-prev">
 						<hr />
 						<a class="next frameless-parachute" href="#frameless-parachute">Next</a>
@@ -60,9 +100,9 @@
 				
 				<article id="frameless-parachute">
 					<header>
-						<h1>Who Can Access Your Information? </h1>
+						<h1>Who Can Access Your Data? </h1>
 					</header>
-					<p>André-Jacques Garnerin carried out the first jump with a silk parachute on October 22, 1797 at Parc Monceau, Paris. Garnerin's first parachute resembled a closed umbrella before he ascended; at a height of approximately 3,000 feet he severed the rope that connected his parachute to the balloon, and the basket fell to earth. Garnerin emerged uninjured.</p>
+					<p>It depends. Look at the map to the right to see how loose your state plays.</p>
 					<nav class="next-prev">
 						<a class="prev manned-flight" href="#manned-flight">Prev</a>
 						<hr />
