@@ -17,17 +17,17 @@
 		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
 		<script src="js/parallax.js"></script>
 		<style type="text/css">
-		@font-face {
-		    font-family: 'League Spartan';
-		    src: url('fonts/leaguespartan-bold.eot');
-		    src: url('fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-		         url('fonts/leaguespartan-bold.woff2') format('woff2'),
-		         url('fonts/leaguespartan-bold.woff') format('woff'),
-		         url('fonts/leaguespartan-bold.ttf') format('truetype'),
-		         url('fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
-		    font-weight: bold;
-		    font-style: normal;
-		}
+			@font-face {
+			    font-family: 'League Spartan';
+			    src: url('fonts/leaguespartan-bold.eot');
+			    src: url('fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+			         url('fonts/leaguespartan-bold.woff2') format('woff2'),
+			         url('fonts/leaguespartan-bold.woff') format('woff'),
+			         url('fonts/leaguespartan-bold.ttf') format('truetype'),
+			         url('fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+			    font-weight: bold;
+			    font-style: normal;
+			}
 			b {
 				font-weight: bold;
 			}
@@ -35,12 +35,23 @@
 				font-size: 1em;
 				font-family: "League Spartan"
 			}
+			article {
+				padding-left: 20px;
+				border-left: 5px solid #2ae699; 
+				margin-top: 105px;
+				padding-top: 0px !important;
+				background: rgba(255,255,255,0.8);
+			}
 			h1 {font-family: "League Spartan" !important; line-height: 1.3em !important; color: #2ae699 !important;}
-			article ul {list-style-type: circle}
+			article ul {
+				list-style-type: circle;
+				padding-left: 15px;
+			}
 			#branding {
 				background: linear-gradient(to bottom,#2ae699,#38d3c7);
 			}
-			#branding h1 {color: white;}
+			#branding h1 {color: white !important;}
+			.next-prev {display: none !important}
 			hr {
 				height: 20px;
 				border: none;
@@ -51,9 +62,7 @@
 	</head>
 
 	<body>
-
 		<div id="wrapper">
-			
 			<header id="branding">
 				<h1>Fusion</h1>
 			</header>
@@ -89,9 +98,10 @@
 						<li>Date of birth</li>
 						<li>Address</li>
 						<li>SSN</li>
-						<li>…</li>
+						<li>Party Affiliation</li>
 					</ul>
 					<p><b>But did you know that information is given to campaigns, advocacy organizations, and basically everyone who asks?</b></p>
+					<hr>
 					<nav class="next-prev">
 						<hr />
 						<a class="next frameless-parachute" href="#frameless-parachute">Next</a>
@@ -112,9 +122,10 @@
 				
 				<article id="english-channel">
 					<header>
-						<h1>For Real? </h1>
+						<h1>What about Facebook?</h1>
 					</header>
-					<p>On January 7, 1785, Jean Pierre Blanchard and Dr. John Jeffries made the first flight over the English Channel, traveling from Dover to France. During the crossing the balloon lost altitude, so they began tossing everything in the gondola they possibly could, even their clothes. About two hours after take off, they crossed the French coast clad only in their underwear.</p>
+					<p>Targeted advertising on Facebook is surging, but publicly available data is still the nuts and bolts of campaigning.</p>
+					<hr>
 					<nav class="next-prev">
 						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
 						<hr />
@@ -126,7 +137,7 @@
 					<header>
 						<h1>About</h1>
 					</header>
-					<p>~~~yo~~</p>
+					<p></p>
 					<nav class="next-prev">
 						<a class="prev english-channel" href="#english-channel">Prev</a>
 						<hr />
@@ -136,10 +147,10 @@
 			
 			<!-- Parallax foreground -->
 			<div id="parallax-bg3">
-				<img id="bg3-1" src="img/voterRegForm.png" width="700" height="426" alt="Montgolfier hot air balloon"/>
+				<img id="bg3-1" src="img/nyform.png" width="500" height="500" alt="Montgolfier hot air balloon"/>
 				<img id="bg3-2" src="img/stateMap.png" width="584" height="385" alt="Frameless parachute"/>
-				<img id="bg3-3" src="img/balloon3.png" width="446" height="713" alt="Blanchard's air balloon"/>
-				<img id="bg3-4" src="img/cat.png" width="500" height="453" alt="Landscape with trees and cows"/>
+				<img id="bg3-3" src="img/campaignfinance.png" width="446" height="500" alt="Blanchard's air balloon"/>
+				<img id="bg3-4" src="img/nyform.png" width="500" height="453" alt="Landscape with trees and cows"/>
 			</div>
 			
 			<!-- Parallax  midground clouds -->
