@@ -37,10 +37,10 @@
           for(var i = 0; i<maxRows;i++) {
             v = window.voternames[c+i];
             form.fill( "#eee" ).font( fontSize, "monospace");
-            form.text( new Point(20, 30 + fontSize*i), `${v.PARTY_AFFILIATION ? v.PARTY_AFFILIATION : " "} ${padName(v.FIRST_NAME, 10)} ${padName((v.LAST_NAME), 15)}  ${v.DATE_OF_BIRTH + "   "} ${padName(v.RESIDENTIAL_ADDRESS1, 25)} ${v.RESIDENTIAL_ZIP} ${padName(v.RESIDENTIAL_CITY,15)} ${getVotingRecord(v)}`, 2000);
+            form.text( new Point(20, fontSize*i), `${v.PARTY_AFFILIATION ? v.PARTY_AFFILIATION : " "} ${padName(v.FIRST_NAME, 10)} ${padName((v.LAST_NAME), 15)}  ${v.DATE_OF_BIRTH + "   "} ${padName(v.RESIDENTIAL_ADDRESS1, 25)} ${v.RESIDENTIAL_ZIP} ${padName(v.RESIDENTIAL_CITY,15)} ${getVotingRecord(v)}`, 2000);
           }
-          form.fill("rgba(0,0,0,0.9)").rect( new Pair( 0, 20 + (maxRows/2 - 1)*fontSize, space.size.x, 20 + (maxRows/2 + 2) * fontSize ) ).stroke(false);
-          form.fill("white").font(fontSize, "monospace").text( new Point(0, 20 + ((maxRows/2 - 1) * fontSize) + (2*fontSize)), "P NAME       FIRSTNAME        DATE_BIRTH    RESIDENTIAL_ADDRESS       ZIP   CITY            VOTING_HISTORY",2000, 20);
+          form.fill("rgba(0,0,0,0.9)").rect( new Pair( 0, (maxRows/2 - 1) * fontSize -6, space.size.x, (maxRows/2 + 2) * fontSize -6) ).stroke(false);
+          form.fill("white").font(fontSize, "monospace").text( new Point(0, ((maxRows/2 - 1) * fontSize) + (2*fontSize) -10), "P NAME       FIRSTNAME        DATE_BIRTH    RESIDENTIAL_ADDRESS       ZIP   CITY            VOTING_HISTORY",2000, 20);
 
           //form.fill("rgba(0,0,0,0.9)").rect( new Pair(space.size.x/2 - 240,space.size.y/2 - 200,space.size.x/2 +230,space.size.y/2 - 110) ).stroke(false);
           //form.fill("white").font(30, "monospace").text( new Point(space.size.x/2, space.size.y/2 - 150), "This is what they know",1000,-200);
