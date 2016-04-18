@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto+Mono:300|Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <!--<link rel="stylesheet" href="border.css">-->
+  <style>
+    @font-face {
+      font-family: 'Redacted Regular';
+      src:  url('fonts/redacted-script-regular.woff2') format('woff2'),
+            url('fonts/redacted-script-regular.woff') format('woff');
+    }
+    .ph { font-family: "Redacted Regular" }
+    body { 
+      margin: 0; 
+      padding: 0; 
+      line-height: 32px;
+      font-size: 18px; 
+      font-weight: 300;
+      font-family: "Roboto Slab";
+    }
+    span.lead {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    blockquote {
+      border-left: 5px solid rgb(221, 221, 221);
+      margin: 0 0;
+      padding: 0px 20px 0 20px;
+    }
+    h1 {
+      font-size: 2em
+    }
+    img { max-width: 100% }
+    ul.nostyle {list-style: none; font-family: "Roboto Mono";}
+    ul.nostyle li {color: #555;}
+    a {color: black; text-decoration: none; box-shadow: rgb(228, 203, 255) 0px -3px 0px 0px inset}
+    .subheading { 
+      color: white;
+      background: linear-gradient(to right, rgb(142, 54, 251) 0px, rgb(255, 61, 241) 100%);
+      font-size: 14px;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Roboto";
+      text-transform: uppercase;
+      line-height: 22.4px;
+      padding: 0 6px 0 6px;
+    }
+    div#hero { width: 100%; height: 700px; background-image: url(images/hero.png); background-size: cover; background-position: center; margin: 0;}
+    #hero h1 {color: white; font-family: "Roboto"; font-size: 3em; text-align: center; margin: 0; position: relative; top: 70%; line-height: 2em; text-decoration: underline;}
+    div#frame {
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom,#2ae699,#38d3c7);
+    }
+    div#wrapper {
+      background: white;
+      margin: 20px auto;
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      overflow-y: scroll;
+    }
+    div.content {
+      margin: 20px 14%;
+    }
+    .content h1 {
+      text-decoration: underline;
+      font-family: "Roboto Slab", "sans-serif";
+      line-height: 1em;
+    }
+    #ch1-canvas-scrollby {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <div id="frame">
+    <div id="wrapper">
+      <div id="hero"><h1>Voter Surveillance</h1></div>
+      <div class="content">
+        <div class="chapter">
+          <span class="subheading">Chapter 1</span>
+          <h1>The Voter Files</h1>
+          <p><span class="lead">You may think</span> political campaigns know next to everything, but at the heart of every data-savvy campaign is a humble bundle of data: The state-by-state lists of registered voters.</p>
+
+          <h2>Your Voting Registration is a Pot of Gold for Campaigns</h2>
+          <p>You probably know that before you can vote, you have to fill out a <a href="#">Voter Registration Form</a>. What data you must provide depends on the state you live in. Most require full name, residential address, and a driver’s license or Social Security number, while some require you to put your ethnicity, party loyalty, phone number and other personal information on the record. But do you know where that data goes? States are required by the 2002 <i>Help America Vote Act</i> to give all this information to political campaigns, and often they give it to just about anyone who asks. (See Fig. 1 for details.)</p>
+          <img src="http://placehold.it/500x300/eee?text=States+data+graphic" alt="">
+          <p>Some of these voter registration files are just a Google search away, and have been used for years by skiptraces and marketers. Although they typically come with a license that precludes using the data for non-political purposes, datasets containing your name and identifying information is likely publicly available for others to see.</p>
+          <p>There is no comprehensive regulation to enforce secure and privacy-minded administration of this data. Unsurprisingly, databases with private, identifying information on as many as 191 million voters have been hacked and leaked online.</p>
+          <p>Take a look at this sample of a dataset of Ohio voters, complete with party affiliation, full name, address and indications which elections (state and primaries) they voted in. We have redacted names and addresses, but the actual information is easily accessible online.</p>
+        </div>
+      </div>
+      <div id="ch1-canvas-scrollby"></div>
+      <div class="content">
+        <div class="chapter">
+          <blockquote>Each State  shall implement  a single, uniform, official, centralized, interactive computerized statewide voter registration list  that contains the name and registration information of every legally registered voter in the State and assigns a unique identifier to each legally registered voter in the State –– Help America Vote Act</blockquote>
+          <p> These voter registration files are a goldmine to political campaigns, giving them access to highly reliable, accurate and political relevant information on voters. Before having this access to these files, elections looked very different. Campaigns would broadcast their messages to much broader audiences. Now, political candidates can find and reach new voters directly, tailoring their messages based on demographic and geographic information, and targeting their campaign tactics down to the household level.</p>
+
+          <p>Other points in this section:</p>
+          <ul>
+            <li>This is a co-optation of administrative data for political purposes</li>
+            <li>There is <b>no opt-out</b>. They will get your data, all of it.</li>
+            <li>It's all regulated at state legislature level by people who use this data for their own campaigns, so it's making the wolf the shepherd. See Economist article for example of someone proposing an opt-out and getting trounced from both sides of the aisle.</li>
+          </ul>
+        </div> 
+      </div>
+      <div class="content">
+        <div class="chapter">
+          <span class="subheading">Chapter 2</span>
+          <h1>Where there's data, there's more data</h1>
+          <p>Think you’re free from surveillance if you’ve never registered to vote? Your voter registration data isn’t the only piece of personal information that campaigns are collecting on you. Campaigns can augment or add new profiles on you with data from dozens of other sources, aggregating information into enormous databases and making inferences from data that you may not even be aware that they’ve taken and held on to so determinately. But where do they get this data? </p>
+          <p> Their own campaigns are an easy first place to start. Any time you have donated or volunteered with a campaign, this information is tracked and added to your profile. Even visiting a campaigns web page or app can give them a trove of information on _______. </p>
+          <p>Your consumer data is another big-ticket item for campaigns. Companies that specialize in gathering consumer information and aggregating it, known as data brokers, can act as consultants sell these databases to campaigns.</p>
+          <p>How are data brokers collecting this data? Your web browsing activities, your purchases, your magazine and web subscriptions, your social media, any of your public records, self-reported information through surveys and contests. Internet advertising company Campaign Grid even boasts on their website of their “200 million individual user profiles enriched with IP targeting and inferred latitude/longitude tracking.”</p>
+          <p>The word “inferred” in that last quote is a key one. What do campaigns believe they are inferring based on your Google searches? While voter registration data has proved to be a good predictor of voter behavior in the past, this hasn’t been the case for the commercial social and behavioral data campaigns are working so hard to collect. Regardless, this data continues to be creepily collected, bought, sold and can meaningfully alter the lens through which you are exposed to political discourse. </p>
+       
+        </div>
+        <div class="chapter">
+          <span class="subheading">Chapter 3</span>
+          <h1>Targeting</h1>
+          <ul>
+            <li>Upload your voter postal/email list to Acxiom &amp; Facebook, success.</li>
+            <li>Target ppl who share a lot b/c referrals are more trustworthy than ads</li>
+            <li>Psychography - Cruz talks to introvers *and* cholerics.</li>
+            <li>Dstillery tracks people into the voting booths in Iowa</li>
+            <li>Targeted TV</li>
+          </ul>
+          <img src="http://placehold.it/900x300/eee?text=Spending+Graph" alt="">
+          <blockquote>86 percent of adults said they, “do not want political campaigns to tailor advertisements to their interests."</blockquote>
+          <p class="ph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est sapien, commodo sit amet consequat non, aliquam eget justo. Sed lacinia, mauris a euismod facilisis, dolor tellus porttitor urna, sed tristique enim lorem sit amet sapien. Quisque eget iaculis leo. Suspendisse id ante porta, consectetur elit nec, tempus lorem. Aliquam erat volutpat. Cras pellentesque id felis in fermentum. In rhoncus, quam eget ultrices efficitur, libero diam blandit tortor, sit amet efficitur sem augue eget libero. Maecenas eu vehicula nisl.</p>
+          <p class="ph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est sapien, commodo sit amet consequat non, aliquam eget justo. Sed lacinia, mauris a euismod facilisis, dolor tellus porttitor urna, sed tristique enim lorem sit amet sapien. Quisque eget iaculis leo. Suspendisse id ante porta, consectetur elit nec, tempus lorem. Aliquam erat volutpat. Cras pellentesque id felis in fermentum.</p>
+          <blockquote class="ph">Aliquam eu tempor elit. In viverra sem et auctor hendrerit. Maecenas mattis rhoncus massa, vel congue lorem. Praesent lobortis leo mauris, id porta turpis porttitor interdum. Morbi consectetur est velit, id vulputate orci vehicula nec. Sed vel neque vel lectus interdum fermentum.</blockquote>
+        </div>
+        <div class="chapter">
+          <span class="subheading">Chapter 4</span>
+          <h1>What does it all mean?</h1>
+          <ul>
+            <li><b>There's a distinction between Mobilization and Persuasion</b>. Persuasion is politics-as-we-wish-it, but it's also an unsolved problem data-wise. The available data works much better for mobilization, i.e. focussing on people who already lean your way and figure out what to hit them over the head with in order to get them to walk to the booth. Meta: Gameifying elections this way foregrounds polarisation and political calcification of the populace at the expense of civic discourse. Bam!</li>
+            <li>Targeting = Atomization = Neoliberal Subjectivity = Death of the Body Politic &lt;/SophomoricTirade&gt;</li>
+            <li>"We need to think about who is not being addressed and what topics are being left out. Who is being left out of the conversation?"</li>
+          </ul>
+          <img src="VennNoBack.png" width="60%"  align="middle" alt="venn" />
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts for first interactive -->
+  <script src="pt.min.js"></script>
+  <script src="names.js"></script>
+  <script src="ch1-scrollby.js"></script>
+</body>
+</html>
+</html>
